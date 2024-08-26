@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Know Sports Lounge</title>
+    <link rel="stylesheet" href="static/sports_lounge.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class=" header">
+        <a href="#default" class="logo">We Know Sports</a>
+        <div class="header-right">
+            <a style="color: white;" href="/homepage">homepage</a>
+            <!-- The form -->
+            <form class="example" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search" name="search" for="search"></i></button>
+            </form>
+        </div>
+    </div>
+    <video width="320" height="240" autoplay>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <div ng-app="tickerApp">
+        <div ng-controller="TICKER">
+            <div class="ticker">
+                <div class="sport-indicator">MLB</div>
+                <div class="info-container">
+                    <div class="score-container">
+                        <div class="team">NYY<span class="score-value">3</span></div>
+                        <div class="team">CLE<span class="score-value">5</span></div>
+                        <div class="status-container">
+                            <div class="status-icon arrow-up"></div>
+                            <div class="status-number">3</div>
+                        </div>
+                        <div class="game-info-container">
+                            <div class="game-info-text">OUT</div>
+                            <div class="game-info-out-container">
+                                <div class="circle-empty"></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="diamond-containter">
+                                <div class="first diamond-empty"></div>
+                                <div class="second diamond-empty"></div>
+                                <div class="third diamond"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">Derek Jeter is expected to return to the Yankees in 2019</div>
+                </div>
+            </div>
+            <div class="logo-container"></div>
+            <div class="logo"></div>
+        </div>
+    </div>
+    <div>
+        <!-- <table>
+            <thead>
+                <tr>
+                    <th>Posts</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for post in all_post %}
+                <tr>
+                    <td id="post">{{post.post}}</td>
+                    </td>
+                    <div><a style="color: blue;" href="/wks_lounge"></a></div>
+                    <td>
+                        <a style="color:rgb(250, 246, 246);" href="/homepage/sport_take/{{post.id}}">posted by
+                            {{post.users['first_name']}}</a>
+                        {% if post.users_id == session['user_id'] %}
+                        <a style="color: rgb(255, 252, 252);" href="/update/{{post.id}}">edit</a> |
+                        <a style="color: rgb(249, 245, 245);" href="homepage/delete/{{post.id}}">delete</a>
+                        {%endif%}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody> -->
+
+
+    </div>
+    <script src="document.getElementsByTagName(" h1")[0].style.fontSize="6vw" ;"></script>
+
+
+</body>
+
+</html>

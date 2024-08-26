@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/sports_lounge.css">
+</head>
+
+<body style="background-blend-mode: luminosity; background-color: rgb(245, 12, 12);">
+    <thead>
+    <tbody>
+
+        <div style=" display: flex; align-items: center;justify-content: space-between;">
+            <a href="/homepage">Post</a>
+            <a href="/logout">logout</a>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-around;">
+            <h2></h2>
+            <p>Posted by:{{session['full_name']}}</p>
+
+        </div>
+
+
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+
+            <div>
+
+
+                <div
+                    style=" height: 400px; width: 1200px;border-style: solid; margin-left: 150px; padding: 0px auto; background-color: black; color: aliceblue; border-color: blue; color-scheme: 20px;">
+                    <div">
+                        <div>
+
+    <tbody>
+        <tr>
+            <h1>{{post.post}}!</h1>
+
+
+            </div>
+        </tr>
+
+        </div>
+        </table>
+        </div>
+    </tbody>
+
+</body>
+
+</html>

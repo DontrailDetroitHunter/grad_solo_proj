@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link rel="stylesheet" href="static/homepage.css">
+
+</head>
+
+<body <div class="reg_validation">
+
+    <div id="reg" class="reg">
+
+        <h1 style="color: aliceblue;">{{all_post.full_name}} Hot! Takes!</h1>
+
+
+        {% with messages = get_flashed_messages(category_filter=["post"]) %}
+        {% if messages %}
+        <ul class=flashes>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        {% with messages = get_flashed_messages(category_filter=["post"]) %}
+        {% if messages %}
+        <ul class=flashes>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+
+        <form action="/sport_take" method="post">
+            <div id="reg" class="reg">
+                {% with messages = get_flashed_messages(category_filter=["post"]) %}
+                {% if messages %}
+                <ul class=flashes>
+                    {% for message in messages %}
+                    <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% endwith %}
+                <div>
+                    <div id="reg" class="reg">
+                        {% with messages = get_flashed_messages(category_filter=["post"]) %}
+                        {% if messages %}
+                        <ul class=flashes>
+                            {% for message in messages %}
+                            <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                        {% endwith %}
+                        {% with messages = get_flashed_messages(category_filter=["post"]) %}
+                        {% if messages %}
+                        <ul class=flashes>
+                            {% for message in messages %}
+                            <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                        {% endwith %}
+                        <label for="post">Posts</label>
+                        <textarea style="height: 100px; width: 300px; padding-right: 20px;margin-right: 100px;"
+                            name="post" id="post" for="post"></textarea>
+                        <button>post</button>
+
+                        </table>
+
+        </form>
+
+        <div ng-app="tickerApp">
+            <div ng-controller="TICKER">
+                <div class="ticker">
+                    <div class="sport-indicator">WKS</div>
+                    <div class="info-container">
+                        <div class="score-container">
+                            <div class="team">GOOD TAKES<span class="score-value">3</span></div>
+                            <div class="team">BAD TAKES<span class="score-value">5</span></div>
+                            <div class="status-container">
+                                <div class="status-icon arrow-up"></div>
+                                <div class="status-number">3</div>
+                            </div>
+                            <div class="game-info-container">
+                                <div class="game-info-text">OUT</div>
+                                <div class="game-info-out-container">
+                                    <div class="circle-empty"></div>
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="diamond-containter">
+                                    <div class="first diamond-empty"></div>
+                                    <div class="second diamond-empty"></div>
+                                    <div class="third diamond"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">We Know Sports Group Chat, Speak Your Mind!</div>
+                    </div>
+                </div>
+                <div class="logo-container"></div>
+                <div class="logo"></div>
+            </div>
+        </div>
+        <script src="document.getElementsByTagName(" h1")[0].style.fontSize="6vw" ;"></script>
+</body>
+
+<input type="hidden" name="user_id">
+
+</html>

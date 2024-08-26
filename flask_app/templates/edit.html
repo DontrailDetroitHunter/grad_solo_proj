@@ -1,0 +1,64 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="reg_validation">
+        <div id="reg" class="reg">
+
+            <table>
+                <tbody>
+                    <form action="/homepage/edit/{{post.id}}" method="post" class="edit" name="edit">
+                        {% with messages = get_flashed_messages(category_filter=["edit"]) %}
+                        {% if messages %}
+                        <ul class=flashes>
+                            {% for message in messages %}
+                            <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                        {% endwith %}
+                        <div>
+                            <div
+                                style="display: flex; align-items: center;justify-content: space-between; height: 400px; height: 400px; border-style: solid; background-color: rgb(193, 5, 5);">
+                                <h1>"{{post.post}}</h1>
+                                <a href="/homepage">Posts</a>
+                                <a href="/logout">logout</a>
+                            </div>
+                            <div id=" post" class="reg">
+                                {% with messages = get_flashed_messages(category_filter=["post"]) %}
+                                {% if messages %}
+                                <ul class=flashes>
+                                    {% for message in messages %}
+                                    <li>{{ message }}</li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                                {% endwith %}
+                                <div>
+                                    <div>
+                                        <textarea name="post" for="post" id="post">{{post.post}}</textarea>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div id="reg" class="reg">
+                                        {% with messages = get_flashed_messages(category_filter=["release_date"]) %}
+                                        {% if messages %}
+                                        <ul class=flashes>
+                                            {% for message in messages %}
+                                            <li>{{ message }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                        {% endif %}
+                                        {% endwith %}
+                                        <div><button>update</button></div>
+                                    </div>
+                                </div>
+                                <div>
+                </tbody>
+            </table>
+        </div>
+        </form>
+</body>
+
+</html>
